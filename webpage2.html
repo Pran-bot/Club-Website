@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css"
+    href="mystyle2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script> Replace with your FontAwesome Kit -->
+    <title>Speaker's Club</title>
+</head>
+<body style="background-color: rgb(255, 255, 255) ; ">
+        <div class="navbar">
+            <image class="logo" src="logo.jpg">
+                
+            </image>
+            <p style="text-align: center;" id="top">SPEAKER's CLUB</p>
+           
+            <image class="banner" src="speakers club.jpg">
+                
+            </image>
+           
+          
+        </div>
+        <nav class="menu-bar">
+            <ul class="menu-list">
+              <li><a href="webpage2.html">Home</a></li>
+              <li><a href="#GOALS">Goals</a></li>
+              <li><a href="#Activities">Activities</a></li>
+              <li><a href="#CARD">Domains</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="#Addmember">Add Member</a></li>
+            </ul>
+          </nav>          
+    </nav>
+    <!-- <div class="timings_demo">
+		<div id="linear" class="test_box">
+			<p>Linear</p>
+		</div>
+		<div id="ease-in" class="test_box">
+			<p>Ease In</p>
+		</div> <br>
+		<p> Hover on above boxes to see the different speeds</p>
+		<div id="go">
+
+			<div class="one">
+				<div class="box">
+				</div>
+			</div>
+			<a href="#go">Animate</a> <a href="#reset">Reset</a>
+		</div>
+
+	</div> -->
+    <h2 style="font-family: cursive; text-align: center; color: blue; " >The Speakers Club at Vishwakarma Institute of Technology (VIT) in Pune, India helps students develop public speaking and communication skills.</h2>
+    <a href="#bottom">
+     Go to bottom
+    </a> 
+    <section class="Goals" id="Goals">
+        <div class="heading">
+            <span id="toggleBtn">G</span>
+            <span id="toggleBtn">O</span>
+            <span id="toggleBtn">A</span>
+            <span id="toggleBtn">L</span>
+            <span id="toggleBtn">S</span>
+        </div>
+    <h3 id="clubDetails" style="display: none; text-align: center;">
+        Club is always ready to help students improve their public speaking and communication skills, and to bridge the gap between technical knowledge and the ability to articulate it.
+        The club provides a space for students to hone their abilities in debates, group discussions, and presentations. Activities include extempore sessions and debates on topics like communalism versus capitalism.
+        Speaking clubs can help students build confidence by providing a supportive environment to practice and refine their oratory skills, receive constructive feedback, and observe others.
+    </h3>
+    
+    <!-- jQuery CDN (Make sure jQuery is included) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#toggleBtn").click(function(){
+                $("#clubDetails").slideToggle(); // Toggle only the paragraph
+            });
+        });
+    </script>
+    </section>
+    
+
+    
+<section class="Activities" id="Activities">
+    <h1 class="heading">
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+        <span>I</span>
+        <span>V</span>
+        <span>I</span>
+        <span>T</span>
+        <span>I</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+    <div class="master">
+        <div class="box-container1">
+            <div class="box">
+                <img src="ACTIVITIES.png" class="image1">
+                <div class="content">
+                    <h3 style="text-align: center;">INDO-CHINA DISCUSSION</h3>
+                </div>
+            </div>
+        </div>
+        <div class="box-container2">
+            <div class="box">
+                <img src="Activities2.png" class="image2">
+                <div class="content">
+                    <h3 style="text-align: center;">DEBATE ON VARIOUS TOPIC</h3>
+                </div>
+            </div>
+        </div>
+        <div class="box-container3">
+            <div class="box">
+                <img src="Activities3.png" class="image3">
+                <div>
+                    <h3 style="text-align: center;">DEBATE DISCUSSION</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="master2">
+    <div class="box-container4">
+        <div class="box">
+            <img src="Activities4.png" class="image4">
+            <div class="content">
+                <h3 style="text-align: center;">DEBATE ON UNION BUDGET</h3>
+            </div>
+        </div>
+    </div>
+    <div class="box-container5">
+        <div class="box">
+            <img src="Activities4 (2).png" class="image5">
+            <div class="content">
+                <h3 style="text-align: center;">DISCUSSION ON INDIA's GDP</h3>
+            </div>
+        </div>
+    </div>
+    <div class="box-container6">
+        <div class="box">
+            <img src="Activities5.png" class="image6">
+            <div class="content">
+                <h3  style="text-align: center;">PUBLIC SPEAKING SESSION</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section class="Addmember" id="Addmember">
+<div class="member">
+<h1 class="heading">
+    <span>A</span>
+    <span>D</span>
+    <span>D</span>
+    <span>-</span>
+    <span>M</span>
+    <span>E</span>
+    <span>M</span>
+    <span>B</span>
+    <span>E</span>
+    <span>R</span>
+</h1>
+<div class="container mt-5">
+    <h3 class="text-center">Members Table</h3>
+
+    <!-- Member Form -->
+    <form id="memberForm" class="mb-3">
+        <div class="row g-2">
+            <div class="col-md-3">
+                <input type="text" id="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="col-md-3">
+                <input type="email" id="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="role" class="form-control" placeholder="Role" required>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary w-100">Add Member</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody id="membersTable">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Function to add a new member to the table
+    document.getElementById('memberForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const role = document.getElementById('role').value;
+
+        const table = document.getElementById('membersTable');
+        const newRow = document.createElement('tr');
+
+        newRow.innerHTML = `
+            <td>${name}</td>
+            <td>${email}</td>
+            <td>${role}</td>
+        `;
+
+        table.appendChild(newRow);
+
+        // Clear input fields
+        document.getElementById('memberForm').reset();
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</section>
+
+
+ <h1 class="heading">
+    <span>D</span>
+    <span>O</span>
+    <span>M</span>
+    <span>A</span>
+    <span>I</span>
+    <span>N</span>
+    <span>S</span>
+ </h1>
+ <section class="CARD">
+        <div class="box-container">
+            <div class="box">
+                <h3>AESTHETICS</h3>
+            </div>
+            <div class="box">
+                <h3>SOCIAL MEDIA</h3>
+            </div>
+            <div class="box">
+                <h3>MULTIMEDIA</h3>
+            </div>
+            <div class="box">
+                <h3>VENUE AND OPERATIONS</h3>
+            </div>
+            <div class="box">
+                <h3>FINANCE</h3>
+            </div>
+            <div class="box">
+                <h3>CONTENT AND REASEARCH</h3>
+            </div>
+            <div class="box">
+                <h3>PUBLICITY AND OUTREACH</h3>
+            </div>
+            <div class="box">
+                <h3>SPONSARSHIP</h3>
+        </div>
+    </div>
+ </section>
+ 
+
+    
+    <h1 class="heading">
+        <span>T</span>
+        <span>E</span>
+        <span>A</span>
+        <span>M</span>
+        <span>24-</span>
+        <span>25</span>
+    </h1>
+    <div class="box-container7">
+            <img src="TeamSC.png" class="img">
+                <h3  style="text-align: center;">Be the part of our team!</h3>
+                    <div class="apply">
+                        <button style="text-align: center;"><a href="registraionform.html">Apply Now!!!</a></button>
+                    </div> 
+        </div>
+    </div>
+    <p id="bottom">
+        Bottom of the page
+    </p>
+    <a href="#top">
+        Go to top
+    </a>
+    <section class="footer">
+        <div class="container">
+            <div class="section">
+                <h3>Contact</h3>
+                <p>Dhruv Chaudhari (801077xxxx)</p>
+                <p>Siddesh Chauhan (954593xxxx)</p>
+                <p>Krish Kawrani (883057xxxx)</p>
+            </div>
+            
+            <div class="section">
+                <h3>Address</h3>
+                <iframe 
+                
+                   src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7568.956423418037!2d73.86937394224779!3d18.461985680480726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1svit%20pune!5e0!3m2!1sen!2sin!4v1740224049372!5m2!1sen!2sin" 
+                
+                        width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="section">
+                <h3>Follow us</h3>
+                <a href="https://www.facebook.com/SpeakersClubVITPune/" target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+                <a href="https://www.instagram.com/speakers_club_vit/" target="_blank">
+                  <i class="fab fa-instagram"></i> 
+                </a>
+                <a href="https://www.linkedin.com/company/speaker-s-club/?originalSubdomain=in" target="_blank">
+                  <i class="fab fa-linkedin"></i> 
+                </a>
+            </div>
+            
+            <div class="section">
+                <h3>Contact Us on WhatsApp</h3>
+                <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success btn-lg">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+      
+
+</body>
+</div>

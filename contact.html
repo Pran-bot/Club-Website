@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        form {
+            margin: 20px;
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Contact Us</h2>
+    <form id="contactForm">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Enter subject" required><br><br>
+
+        <label for="body">Message:</label>
+        <textarea id="body" placeholder="Enter your message here..." required></textarea><br><br>
+
+        <button type="submit">Enquire</button>
+    </form>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+            
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const body = document.getElementById('body').value.trim();
+
+            // Construct the Gmail URL with the input values
+            const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Redirect the user to Gmail
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+</body>
+</html>

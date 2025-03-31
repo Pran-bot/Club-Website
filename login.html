@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="mystyle.css">
+  </head>
+  <n>
+    <div class="navbar">
+        <image class="logo" src="logo.jpg">
+            
+        </image>
+        <p  style= "text-align: center;">SPEAKER's CLUB</p>
+       
+        <image class="banner" src="speakers club.jpg">
+            
+        </image>
+       
+      
+    </div>
+    <nav class="menu-bar">
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <h3>Admin Page</h3>
+  <form style="text-align: center;"id="form" onsubmit="return validateForm()" action="webpage2.html" method="GET" >
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <span class="error" id="emailError"></span>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span class="error" id="passwordError"></span>
+    <br><br>
+ 
+    <input type="submit" value="Submit">
+  </form>
+      <script>
+        function validateForm() {
+          let isValid = true;
+    
+          // Clear previous error messages
+          document.getElementById("emailError").textContent = "";
+          document.getElementById("passwordError").textContent = "";
+
+          // Email validation
+          const email = document.getElementById("email").value.trim();
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (email === "") {
+            document.getElementById("emailError").textContent = "Email is required.";
+            isValid = false;
+          } else if (!emailPattern.test(email)) {
+            document.getElementById("emailError").textContent = "Enter a valid email address.";
+            isValid = false;
+          }
+    
+          // Password validation
+          const password = document.getElementById("password").value.trim();
+          if (password === "") {
+            document.getElementById("passwordError").textContent = "Password is required.";
+            isValid = false;
+          } else if (password.length < 8) {
+            document.getElementById("passwordError").textContent = "Password must be at least 8 characters long.";
+            isValid = false;
+          }
+        
+          if (isValid) {
+            alert("Login successful!");
+        }
+        return isValid; 
+    }
+        </script>
+  </body>
+</html>
